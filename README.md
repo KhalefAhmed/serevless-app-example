@@ -29,8 +29,8 @@ https://<API_ID>.execute-api.<REGION>.amazonaws.com/Prod/hello
 Replace <API_ID> and <REGION> with the corresponding values displayed in the deployment output.
 
 # Code Explanation
-app.py: This Lambda function performs a DynamoDB query to retrieve all items from the table and then returns the result.
-template.yaml: This file defines the necessary AWS resources to deploy the application, including the Lambda function and the DynamoDB table.
-commands.sh: These AWS CLI commands allow you to create an S3 bucket, package the SAM template, and deploy the application.
-template-generated.yaml: This file is generated during the SAM template packaging and contains the AWS resources with the appropriate parameters.
+`app.py`: This Lambda function performs a DynamoDB query to retrieve all items from the table and then returns the result.
+`template.yaml`: This file defines the necessary AWS resources to deploy the application, including the Lambda function and the DynamoDB table.
+`commands.sh`: These AWS CLI commands allow you to create an S3 bucket, package the SAM template, and deploy the application.
+`template-generated.yaml`: This file is generated during the SAM template packaging and contains the AWS resources with the appropriate parameters.
 Feel free to modify the code and the SAM template according to your needs.
