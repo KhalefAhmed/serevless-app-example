@@ -1,7 +1,7 @@
-AWS SAM Project
+# AWS SAM Project
 This project uses AWS SAM (Serverless Application Model) to deploy an AWS Lambda application in AWS.
 
-Project Contents
+# Project Contents
 app.py: The source code of the Lambda function, which performs a DynamoDB query and returns the result.
 template.yaml: The SAM template file that defines the AWS resources, including the Lambda function and the DynamoDB table.
 commands.sh: The AWS CLI commands to create an S3 bucket, package the SAM template, and deploy the application.
@@ -28,7 +28,7 @@ Once the deployment is complete, you can access your Lambda function's API at th
 https://<API_ID>.execute-api.<REGION>.amazonaws.com/Prod/hello
 Replace <API_ID> and <REGION> with the corresponding values displayed in the deployment output.
 
-Code Explanation
+# Code Explanation
 app.py: This Lambda function performs a DynamoDB query to retrieve all items from the table and then returns the result.
 template.yaml: This file defines the necessary AWS resources to deploy the application, including the Lambda function and the DynamoDB table.
 commands.sh: These AWS CLI commands allow you to create an S3 bucket, package the SAM template, and deploy the application.
